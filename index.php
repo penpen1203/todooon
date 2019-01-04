@@ -1,6 +1,9 @@
 <?php
 require('function.php');
 require('head.php');
+require('header.php');
+
+
 ?>
 <!--ヘッド-->
 <body>
