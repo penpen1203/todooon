@@ -76,11 +76,11 @@ if (!empty($_POST)) {
 
 ?>
  <?php
+$title = 'ユーザ登録';
 require('head.php');
 require('header.php');
 ?>
  <body class="main">
-   <h1 class="title">ユーザー登録</h1>
    <form action="" method="post">
      <div class="formLogin">
        <div class="msg_area">

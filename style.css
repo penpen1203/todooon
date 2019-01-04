@@ -32,13 +32,9 @@ header {
 }
 
 .main {
-  /* text-align: center; */
   background: #f9e3aa;
-  /* margin: 50px; */
-  height: auto;
   box-sizing: border-box;
-  min-height: 500px;
-  padding-top: 50px;
+  min-height: 100%;
 }
 
 .topTitle {
@@ -94,6 +90,10 @@ header {
 .pageTitle {
   width: 50%;
   margin: auto;
+}
+
+.formContent {
+  padding-top: 2rem;
 }
 
 .contentIndex {
