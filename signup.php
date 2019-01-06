@@ -1,7 +1,6 @@
 <?php
 require('function.php');
 
-
 debugStart();
 
 if (!empty($_POST)) {

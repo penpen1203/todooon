@@ -8,7 +8,3 @@
   <link rel="stylesheet" href="style.css?<?php echo $timestamp ?>">
   <title>toDo</title>
 </head>
-<?php 
-ini_set("display_errors", On);
-error_reporting(E_ALL);
-?>
