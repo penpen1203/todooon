@@ -6,7 +6,7 @@ require('head.php');
 require('header.php');
 
 indexContent();
-
+print_r($result);
 ?>
 <!--ヘッド-->
 <body>
