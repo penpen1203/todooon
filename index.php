@@ -5,7 +5,7 @@ require('function.php');
 require('head.php');
 require('header.php');
 
-
+indexContent();
 
 ?>
 <!--ヘッド-->
