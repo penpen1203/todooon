@@ -24,6 +24,8 @@ $index = indexContent();
 $title = "マイページ";
 require('head.php');
 require('header.php');
+debug('ポート調査：' . print_r($_SERVER));
+
 
 ?>
 
