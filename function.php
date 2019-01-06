@@ -112,16 +112,16 @@ function getErrMsg($key)
 function dbConnect()
 {
     // if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    //     $dsn = 'mysql:dbname=todo;host=localhost;charset=utf8';
-    //     $user = 'root';
-    //     $password = 'root';
-    //     $options = array(
-    //         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    //         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    //         PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-    //     );
+        // $dsn = 'mysql:dbname=todo;host=localhost;charset=utf8';
+        // $user = 'root';
+        // $password = 'root';
+        // $options = array(
+        //     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        //     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        //     PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+        // );
     // } else {
-    // 本番環境用
+        // 本番環境用
     $dsn = 'mysql:dbname=heroku_422813c1929c427;host=us-cdbr-iron-east-01.cleardb.net;charset=utf8';
     $user = 'b7f81b50a1c068';
     $password = '1d2bc1fd';
@@ -131,8 +131,9 @@ function dbConnect()
         PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
     );
     // }
-
     $dbh = new PDO($dsn, $user, $password, $options);
+    debug('ポート調査：' . print_r($_SERVER));
+
     return $dbh;
 }
 
