@@ -132,7 +132,6 @@ function dbConnect()
     );
     // }
     $dbh = new PDO($dsn, $user, $password, $options);
-    debug('ポート調査：' . print_r($_SERVER));
 
     return $dbh;
 }
