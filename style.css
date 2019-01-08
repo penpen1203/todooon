@@ -37,6 +37,22 @@ header {
   min-height: 100%;
 }
 
+.topPageTitle {
+  padding-top: 3rem;
+  font-size: 5rem;
+}
+
+.topPageContainer {
+  padding-top: 5rem;
+}
+
+.topPageContent {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  height: 5rem;
+}
+
 .topTitle {
   float: left;
   line-height: 30px;

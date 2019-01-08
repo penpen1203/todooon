@@ -3,15 +3,18 @@ $title = 'トップページ';
 
 require('function.php');
 require('head.php');
-require('header.php');
 
 ?>
 <!--ヘッド-->
-<body>
-  <h1 class="title">toDoリスト</h1>
-  <form action="get" class="form">
-    <input type="text" class="form-control" name="content" val="">
-    <input type="submit" class="form-submit" value="送信">
-  </form>
+<div class="main">
+  <body>
+    <div class="topPage">
+      <h1 class="topPageTitle">toDoリスト</h1>
+      <div class="topPageContainer">
+        <a href="signup.php" class='topPageContent'>ユーザー登録</a>
+        <a href="login.php" class='topPageContent'>ログイン</a>
+      </div>
+    </div>
 
-  <?php require('footer.php') ?>
+
+    <?php require('footer.php') ?>
