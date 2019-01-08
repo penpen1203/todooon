@@ -2,9 +2,6 @@
 ini_set('log_errors', 'on');
 ini_set('error_log', 'php.log');
 
-ini_set("display_errors", 1);
-error_reporting(E_ALL);
-
 $debug_flg = true;
 function debug($str)
 {
