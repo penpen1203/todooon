@@ -68,14 +68,14 @@ function validHalf($str, $key)
 }
 function validMinLen($str, $key, $min = 6)
 {
-    if (mb_strlen($str) < $min) {
+    if (mb_strlen($str, 'utf-8') < $min) {
         global $err_msg;
         $err_msg[$key] = MSG05;
     }
 }
 function validMaxLen($str, $key, $max = 256)
 {
-    if (mb_strlen($str) > $max) {
+    if (mb_strlen($str, 'utf-8') > $max) {
         global $err_msg;
         $err_msg[$key] = MSG06;
     }
